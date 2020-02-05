@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row" >
+        <div class="col card-columns mt-3">
+            <div class="card" style="width: 18rem;" *ngFor="let item of paises">
+                <img src="{{item.flag}}" class="card-img-top" alt="imagen">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <span class="badge badge-warning mx-2" *ngFor="let leng of item.languages">{{leng.name}}</span>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
